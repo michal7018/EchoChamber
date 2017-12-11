@@ -38,7 +38,7 @@
                 }
                 var rum=document.getElementById("roomID").value;
                 var llo=document.getElementById("login").value;
-                webSocket = new WebSocket("ws://localhost:8080/EchoChamber/echo/" + rum + "/" + llo);
+                webSocket = new WebSocket("ws://localhost:8084/EchoChamber/echo/" + rum + "/" + llo);
                 
                 webSocket.onopen = function(event){
                     if(event.data === undefined)
